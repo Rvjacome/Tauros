@@ -9,7 +9,7 @@ Este proyecto es un robot Resuelve laberinto para competencia
 El robot está basado en la plataforma **Pololu Zumo Arduino**, al que se le incorporan tres sensores de distancia _VL6180_, uno en el frontal, y otros dos a cada lado. Cuenta con dos micromotorreductores de tipo N20 DC Motor with Magnetic Encoder - 6V with 1:150 Gear Ratio.
 El programa lee las paredes del laberinto a través de los sensores Sharp IR distance sensor, con lo que puede determinar en que dirección se puede mover (no hay pared), hacia adelante, derecha, izquierda o dar la vuelta si es necesario. Cuando avanza cuenta los pasos del encoder con lo que puede saber cuanto se mueve y determinar si ha avanzado una casilla. Por otra parte, , garantizando que los giros son completos y se encuentra en la orientación de destino. Como se indicó anteriormente, a través del sensor _QTR_ frontal el robot puede saber cuando entra en la meta.
 
-![Tseo](https://github.com/NacioSystems/Tseo/blob/master/Imagenes/TSO2%20con%20encoders.jpg "Tseo listo")
+![Tseo]("Tauros diseño implementado")
 
 ### Materiales:
 * Pololu Zumo for Arduino (sin balda)
