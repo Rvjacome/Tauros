@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="MazeRobot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00490709777806277 -0.00018980149074092 0.0158541076050415"
+        rpy="0 0 0" />
+      <mass
+        value="0.113840294442823" />
+      <inertia
+        ixx="0.00020713"
+        ixy="0.000"
+        ixz="0.000"
+        iyy="0.000491"
+        iyz="0.00000"
+        izz="0.00014401" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L_wheel_link">
+    <inertial>
+      <origin
+        xyz="-2.99096858125819E-05 0.000104405542786706 0.0106748994421485"
+        rpy="0 0 0" />
+      <mass
+        value="0.0193884068569417" />
+      <inertia
+        ixx="2.0510194557915E-04"
+        ixy="-1.38176554484537E-04"
+        ixz="-1.25876332418469E-04"
+        iyy="2.06467928427853E-04"
+        iyz="5.48385935622177E-04"
+        izz="2.44092899915579E-04" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/L_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/L_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_Wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0043278 0.031199 0.0080157"
+      rpy="-1.5708 0.0038917 -0.0016425" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="R_wheel_link">
+    <inertial>
+      <origin
+        xyz="5.80889775016746E-05 -8.73721543165756E-05 -0.010674936298826"
+        rpy="0 0 0" />
+      <mass
+        value="0.0193884068569417" />
+      <inertia
+        ixx="2.0551514945078E-04"
+        ixy="-6.42512948553551E-04"
+        ixz="-3.05250616726642E-4"
+        iyy="2.06054394462654E-04"
+        iyz="4.59129190656125E-04"
+        izz="2.44093230009149E-04" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/R_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/R_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0043053 -0.0312 0.008035"
+      rpy="-1.5708 0 0.00018716" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="base_ball_link">
+    <inertial>
+      <origin
+        xyz="-0.000156741560749171 3.66156148715047E-06 0.00175642003782412"
+        rpy="0 0 0" />
+      <mass
+        value="0.000334626588702842" />
+      <inertia
+        ixx="6.32096281729359E-04"
+        ixy="1.38188367097301E-4"
+        ixz="1.72903645492289E-4"
+        iyy="6.91894812583214E-4"
+        iyz="-3.84168963283986E-4"
+        izz="1.0328131558991E-04" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_ball_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/base_ball_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_ball_joint"
+    type="fixed">
+    <origin
+      xyz="0.0564228989028418 -3.72202777769552E-05 0.00311838120082205"
+      rpy="-3.13827653428421 0 1.57098348766261" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_ball_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="foward_ball_link">
+    <inertial>
+      <origin
+        xyz="0 -6.93889390390723E-18 3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.000421160340343921" />
+      <inertia
+        ixx="3.64261578363457E-04"
+        ixy="-1.2278462217584E-4"
+        ixz="1.29246970711411E-4"
+        iyy="3.64261578363457E-04"
+        iyz="-2.62532909257553E-4"
+        izz="3.64261578363457E-04" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/foward_ball_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/foward_ball_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="foward_ball_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0048155"
+      rpy="1.5467 0.018736 1.5131" />
+    <parent
+      link="base_ball_link" />
+    <child
+      link="foward_ball_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lateral_ball_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.000421160340343921" />
+      <inertia
+        ixx="3.64261578363457E-04"
+        ixy="6.46234853557053E-4"
+        ixz="1.29246970711411E-4"
+        iyy="3.64261578363457E-4"
+        iyz="6.46234853557053E-4"
+        izz="3.64261578363457E-04" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/lateral_ball_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelo_robot/meshes/lateral_ball_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lateral_ball_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.00481546875"
+      rpy="-3.14159265358979 -0.0644086959094416 1.54850253991482" />
+    <parent
+      link="base_ball_link" />
+    <child
+      link="lateral_ball_link" />
+    <axis
+      xyz="0.99745539057873 -0.0224789316084745 0.0676567915229082" />
+  </joint>
+</robot>
