@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="taurus_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00293768617847148 -0.000180932444542536 0.0163820289331232"
+        rpy="0 0 0" />
+      <mass
+        value="0.109923704165007" />
+      <inertia
+        ixx="6.25023471997517E-05"
+        ixy="3.57248183955067E-07"
+        ixz="-3.65582256475085E-07"
+        iyy="8.50009197810057E-05"
+        iyz="-1.86085775017925E-07"
+        izz="0.00014440100030123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.745098039215686 0.737254901960784 0.729411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Rueda_derecha_link">
+    <inertial>
+      <origin
+        xyz="-2.2882E-06 5.0601E-05 0.012107"
+        rpy="0 0 0" />
+      <mass
+        value="0.010873" />
+      <inertia
+        ixx="1.1758E-06"
+        ixy="-1.2262E-12"
+        ixz="-6.3889E-11"
+        iyy="1.181E-06"
+        iyz="-2.5158E-09"
+        izz="1.5164E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Rueda_derecha_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Rueda_derecha_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_derecha_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0043003 -0.059687 0.0079472"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_derecha_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Rueda_izquierda_link">
+    <inertial>
+      <origin
+        xyz="-2.0761E-06 -8.4779E-05 0.010976"
+        rpy="0 0 0" />
+      <mass
+        value="0.010873" />
+      <inertia
+        ixx="1.1758E-06"
+        ixy="2.1716E-12"
+        ixz="-6.3899E-11"
+        iyy="1.181E-06"
+        iyz="-2.5158E-09"
+        izz="1.5164E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Rueda_izquierda_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Rueda_izquierda_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Rueda_izquierda_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0043291 0.036579 0.0080704"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rueda_izquierda_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Scan_link">
+    <inertial>
+      <origin
+        xyz="0.010059 -0.00088382 0.000124"
+        rpy="0 0 0" />
+      <mass
+        value="0.0055715" />
+      <inertia
+        ixx="5.6499E-07"
+        ixy="3.6334E-08"
+        ixz="3.4462E-09"
+        iyy="2.3592E-07"
+        iyz="-1.4863E-09"
+        izz="6.4738E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Scan_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Scan_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.03982 9.4804E-05 0.016343"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Scan_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Base_castor_link">
+    <inertial>
+      <origin
+        xyz="-3.3105E-06 -0.00019963 -0.0010622"
+        rpy="0 0 0" />
+      <mass
+        value="0.00033463" />
+      <inertia
+        ixx="6.9193E-09"
+        ixy="-9.2177E-14"
+        ixz="1.0878E-11"
+        iyy="6.3212E-09"
+        iyz="-1.7888E-10"
+        izz="1.0328E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Base_castor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Base_castor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Base_castor_joint"
+    type="fixed">
+    <origin
+      xyz="0.056575 0 0.0034302"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Base_castor_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Caster_ball_link">
+    <inertial>
+      <origin
+        xyz="0 1.3878E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00042116" />
+      <inertia
+        ixx="3.6426E-09"
+        ixy="-2.3666E-26"
+        ixz="-1.0097E-25"
+        iyy="3.6426E-09"
+        iyz="2.051E-26"
+        izz="3.6426E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Caster_ball_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://taurus_description/meshes/Caster_ball_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Caster_ball_joint"
+    type="continuous">
+    <origin
+      xyz="-1.325E-05 -3.8318E-05 -0.004121"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Base_castor_link" />
+    <child
+      link="Caster_ball_link" />
+    <axis
+      xyz="1 1 1" />
+  </joint>
+</robot>
